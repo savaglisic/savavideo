@@ -154,7 +154,7 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ video_link: videoLink })
+                body: JSON.stringify({ torrent_link: videoLink })  // Updated key here
             })
                 .then(response => response.json())
                 .then(data => {
@@ -184,6 +184,7 @@
     </script>
 </body>
 </html>
+
 
 
 
