@@ -141,7 +141,7 @@
 
         function addMagnet(element, videoLink) {
             const currentTime = new Date().getTime();
-            if (currentTime - lastClickTime < 60000) {  // 1 minute = 60000 milliseconds
+            if (currentTime - lastClickTime < 1000) {  // 1 minute = 60000 milliseconds
                 showPopup('warning-popup');
                 return;
             }
